@@ -48,5 +48,5 @@ def validate_list(context):
         if 'SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s' in key['title']:
             price = key['price']
     
-    response | should.have.length.of(20)
     price | should.be.equal.to(109)
+    response | should.have.length.of(20)
